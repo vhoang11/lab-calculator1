@@ -8,7 +8,6 @@ html {
   padding: 0;
   box-sizing: inherit;
 }
-
 .calculator {
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -20,7 +19,7 @@ html {
 }
 
 .calculator-screen {
-  width: 400px;
+  width: 100%;
   font-size: 5rem;
   height: 80px;
   border: none;
@@ -33,8 +32,9 @@ html {
 }
 
 button {
-  height: 60px;
+  height: 80px;
   background-color: #d8d9db;
+  font-size: large;
   
 }
 
@@ -57,4 +57,17 @@ button:active {
 
 .operator:active {
   background-color: #dd8d37;
+}
+
+.clear {
+  grid-area: 1/1/2/3;
+}
+
+.zero {
+  grid-area: 5/1/6/4;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
